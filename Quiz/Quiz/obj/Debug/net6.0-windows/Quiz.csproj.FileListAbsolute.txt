@@ -1,0 +1,7 @@
+C:\Users\ADmin\Documents\GitHub\Quiz-Assignment\Quiz\Quiz\obj\Debug\net6.0-windows\Quiz.csproj.AssemblyReference.cache
+C:\Users\ADmin\Documents\GitHub\Quiz-Assignment\Quiz\Quiz\obj\Debug\net6.0-windows\Quiz.Form1.resources
+C:\Users\ADmin\Documents\GitHub\Quiz-Assignment\Quiz\Quiz\obj\Debug\net6.0-windows\Quiz.csproj.GenerateResource.cache
+C:\Users\ADmin\Documents\GitHub\Quiz-Assignment\Quiz\Quiz\obj\Debug\net6.0-windows\Quiz.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADmin\Documents\GitHub\Quiz-Assignment\Quiz\Quiz\obj\Debug\net6.0-windows\Quiz.AssemblyInfoInputs.cache
+C:\Users\ADmin\Documents\GitHub\Quiz-Assignment\Quiz\Quiz\obj\Debug\net6.0-windows\Quiz.AssemblyInfo.cs
+C:\Users\ADmin\Documents\GitHub\Quiz-Assignment\Quiz\Quiz\obj\Debug\net6.0-windows\Quiz.csproj.CoreCompileInputs.cache
