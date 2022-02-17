@@ -1,0 +1,17 @@
+C:\Users\ADmin\Documents\GitHub\Quiz-Assignment\643450327-0\643450327-0\bin\Debug\net6.0-windows\643450327-0.exe
+C:\Users\ADmin\Documents\GitHub\Quiz-Assignment\643450327-0\643450327-0\bin\Debug\net6.0-windows\643450327-0.deps.json
+C:\Users\ADmin\Documents\GitHub\Quiz-Assignment\643450327-0\643450327-0\bin\Debug\net6.0-windows\643450327-0.runtimeconfig.json
+C:\Users\ADmin\Documents\GitHub\Quiz-Assignment\643450327-0\643450327-0\bin\Debug\net6.0-windows\643450327-0.dll
+C:\Users\ADmin\Documents\GitHub\Quiz-Assignment\643450327-0\643450327-0\bin\Debug\net6.0-windows\643450327-0.pdb
+C:\Users\ADmin\Documents\GitHub\Quiz-Assignment\643450327-0\643450327-0\obj\Debug\net6.0-windows\643450327-0.csproj.AssemblyReference.cache
+C:\Users\ADmin\Documents\GitHub\Quiz-Assignment\643450327-0\643450327-0\obj\Debug\net6.0-windows\_643450327_0.Form1.resources
+C:\Users\ADmin\Documents\GitHub\Quiz-Assignment\643450327-0\643450327-0\obj\Debug\net6.0-windows\643450327-0.csproj.GenerateResource.cache
+C:\Users\ADmin\Documents\GitHub\Quiz-Assignment\643450327-0\643450327-0\obj\Debug\net6.0-windows\643450327-0.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADmin\Documents\GitHub\Quiz-Assignment\643450327-0\643450327-0\obj\Debug\net6.0-windows\643450327-0.AssemblyInfoInputs.cache
+C:\Users\ADmin\Documents\GitHub\Quiz-Assignment\643450327-0\643450327-0\obj\Debug\net6.0-windows\643450327-0.AssemblyInfo.cs
+C:\Users\ADmin\Documents\GitHub\Quiz-Assignment\643450327-0\643450327-0\obj\Debug\net6.0-windows\643450327-0.csproj.CoreCompileInputs.cache
+C:\Users\ADmin\Documents\GitHub\Quiz-Assignment\643450327-0\643450327-0\obj\Debug\net6.0-windows\643450327-0.dll
+C:\Users\ADmin\Documents\GitHub\Quiz-Assignment\643450327-0\643450327-0\obj\Debug\net6.0-windows\refint\643450327-0.dll
+C:\Users\ADmin\Documents\GitHub\Quiz-Assignment\643450327-0\643450327-0\obj\Debug\net6.0-windows\643450327-0.pdb
+C:\Users\ADmin\Documents\GitHub\Quiz-Assignment\643450327-0\643450327-0\obj\Debug\net6.0-windows\643450327-0.genruntimeconfig.cache
+C:\Users\ADmin\Documents\GitHub\Quiz-Assignment\643450327-0\643450327-0\obj\Debug\net6.0-windows\ref\643450327-0.dll
