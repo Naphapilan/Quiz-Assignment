@@ -4,7 +4,7 @@ namespace Quiz
 {
     public partial class Form1 : Form
     {
-        Quiz oListcal = new Quiz();
+        private Quiz oListcal = new Quiz();
         public Form1()
         {
             InitializeComponent();
