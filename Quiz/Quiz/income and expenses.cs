@@ -8,48 +8,64 @@ namespace Quiz
 {
     internal class income_and_expenses
     {
-        private double sumIn = 0;
-        private double sumEx = 0;
+        private double sumIncome = 0;
+        private double sumExpenses = 0;
         private double expenses = 0;
         private double income = 0;
-        private string list = string.Empty;
-        private string type = string.Empty;
-        private string alldata = string.Empty;
+        private int n=0;
 
-        public void addList(double amount, string list)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="income"></param>
+        /// <param name="expenses"></param>
+        public void addList(double income ,double expenses )
         {
-            this.sumIn += amount;
-            this.sumEx -= amount;
-            this.alldata += list + " " + amount + type + Environment.NewLine;
+            this.sumIncome += income;
+            this.sumExpenses += expenses;
+            this.n++;
 
-            if (this.income < amount) { this.income = amount; }
-            if (this.expenses < amount) { this.expenses = amount; }
+            if (this.sumIncome < income) 
+            { 
+                this.sumIncome += income; 
+
+            }
+            if (this.sumExpenses < expenses) 
+            { 
+                this.sumExpenses += expenses; 
+            }
         }
 
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns>sumIncome</returns>
         public double getSumIncome()
         {
-            double result = this.sumIn + this.income;
+            double result = this.sumIncome + this.income;
             return result;
         }
         public double getSumExpenses()
         {
-            double result = this.sumEx + this.expenses;
+            double result = this.sumExpenses + this.expenses;
             return result;
         }
         public double getIncome()
         {
-            return sumIn;
+            return this.sumIncome;
         }
 
 
-        public string getExpenses(string sumExpenses)
+        public double getExpenses()
         {
-            return sumExpenses;
+            return this.sumExpenses;
         }
-        public string getAlldata()
+
+ 
+
+        internal void addList(string income, string expenses)
         {
-            return alldata;
+            throw new NotImplementedException();
         }
     }
 }
