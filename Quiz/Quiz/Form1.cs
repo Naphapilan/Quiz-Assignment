@@ -5,7 +5,7 @@ namespace Quiz
 
     public partial class Form1 : Form
     {
-        income_and_expenses oCal = new income_and_expenses();
+        
         public Form1()
         {
             InitializeComponent();
@@ -23,8 +23,8 @@ namespace Quiz
                 this.dataGridView1.Text = readAllLine[0];
                 int n = dataGridView1.Rows.Add();
                 dataGridView1.Rows[n].Cells[0].Value = textBoxList.Text;
-                dataGridView1.Rows[n].Cells[1].Value = textBox3.Text;
-                dataGridView1.Rows[n].Cells[2].Value = textBox4.Text;
+                dataGridView1.Rows[n].Cells[1].Value = textBoxIncome.Text;
+                dataGridView1.Rows[n].Cells[2].Value = textBoxExpenses.Text;
 
                 for (int i = 0; i < readAllLine.Length; i++)
                 {
@@ -70,27 +70,26 @@ namespace Quiz
 
 
         int sumin = 0, sumex = 0, inIn = 0, inEx = 0;
+
         private void buttonAdd_Click(object sender, EventArgs e)
         {
             int n = dataGridView1.Rows.Add();
             dataGridView1.Rows[n].Cells[0].Value = textBoxList.Text;
-            dataGridView1.Rows[n].Cells[1].Value = textBox3.Text;
-            dataGridView1.Rows[n].Cells[2].Value = textBox4.Text;
+            dataGridView1.Rows[n].Cells[1].Value = textBoxIncome.Text;
+            dataGridView1.Rows[n].Cells[2].Value = textBoxExpenses.Text;
 
-            
-            inIn = Convert.ToInt32(textBox3.Text);
-            inEx = Convert.ToInt32(textBox4.Text);
+
+            inIn = Convert.ToInt32(textBoxIncome.Text);
+            inEx = Convert.ToInt32(textBoxExpenses.Text);
 
             sumin = inIn + sumin;
             sumex = inEx + sumex;
 
-            textBox5.Text = sumin.ToString();
-            textBox6.Text = sumex.ToString();
-            
-
+            textBoxSumIncome.Text = sumin.ToString();
+            textBoxSumExpenses.Text = sumex.ToString();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void buttonSave_Click(object sender, EventArgs e)
         {
             if (dataGridView1.Rows.Count > 0)
             {
@@ -129,4 +128,8 @@ namespace Quiz
             }
         }
     }
-}
+
+        
+    }
+
+
