@@ -24,11 +24,6 @@ namespace Quiz
 
             this.income = income;
             this.expenses = expenses;
-
-
-
         }
-
-    }
-        
+    }        
 }
