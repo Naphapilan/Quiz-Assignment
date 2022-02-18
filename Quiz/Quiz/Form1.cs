@@ -68,15 +68,7 @@ namespace Quiz
             }
         }
 
-        private void textBox5_TextChanged(object sender, EventArgs e)
-        {
 
-        }
-
-        private void textBox6_TextChanged(object sender, EventArgs e)
-        {
-
-        }
         int sumin = 0, sumex = 0, inIn = 0, inEx = 0;
         private void buttonAdd_Click(object sender, EventArgs e)
         {
