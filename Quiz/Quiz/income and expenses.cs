@@ -8,22 +8,22 @@ namespace Quiz
 {
     internal class income_and_expenses
     {
-        private double sumIncome = 0;
-        private double sumExpenses = 0;
-        private double expenses = 0;
-        private double income = 0;
-        private int n=0;
+        private int sumIncome = 0;
+        private int sumExpenses = 0;
+        private int expenses = 0;
+        private int income = 0;
+        private int n = 0;
 
         /// <summary>
         /// 
         /// </summary>
         /// <param name="income"></param>
         /// <param name="expenses"></param>
-        public void addList(double income ,double expenses )
+        public void addList(int income ,int expenses )
         {
             this.sumIncome += income;
             this.sumExpenses += expenses;
-            this.n++;
+         /*   this.n++;
 
             if (this.sumIncome < income) 
             { 
@@ -33,7 +33,7 @@ namespace Quiz
             if (this.sumExpenses < expenses) 
             { 
                 this.sumExpenses += expenses; 
-            }
+            }*/
         }
 
         /// <summary>
@@ -50,22 +50,6 @@ namespace Quiz
             double result = this.sumExpenses + this.expenses;
             return result;
         }
-        public double getIncome()
-        {
-            return this.sumIncome;
-        }
 
-
-        public double getExpenses()
-        {
-            return this.sumExpenses;
-        }
-
- 
-
-        internal void addList(string income, string expenses)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

@@ -14,11 +14,17 @@ namespace Quiz
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "CSV(*.csv)|*.csv";
+            openFileDialog.Filter = "CSV(*.csv)|*.csv"; 
+            
+
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
                 string[] readAllLine = File.ReadAllLines(openFileDialog.FileName);
                 this.dataGridView1.Text = readAllLine[0];
+                int n = dataGridView1.Rows.Add();
+                dataGridView1.Rows[n].Cells[0].Value = textBoxList.Text;
+                dataGridView1.Rows[n].Cells[1].Value = textBox3.Text;
+                dataGridView1.Rows[n].Cells[2].Value = textBox4.Text;
 
                 for (int i = 0; i < readAllLine.Length; i++)
                 {
@@ -28,6 +34,7 @@ namespace Quiz
                 }
 
             }
+
         }
         private void addDataToGridView(string list, string income, string expenses)
         {
@@ -61,39 +68,54 @@ namespace Quiz
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonAdd_Click(object sender, EventArgs e)
         {
             int n = dataGridView1.Rows.Add();
             dataGridView1.Rows[n].Cells[0].Value = textBoxList.Text;
             dataGridView1.Rows[n].Cells[1].Value = textBox3.Text;
             dataGridView1.Rows[n].Cells[2].Value = textBox4.Text;
-            
+
+            /*for (n = 0 ) 
+            { sumIncome = dataGridView1.Rows[n].Cells[1].Value + samt
+            }
+            dataGridView1.Rows[n - 1].Cells[0].Value = "รวม";
+            dataGridView1.Rows[n - 1].Cells[1].Value = samIncome;*/
+
+            /*string sum = this.textBox3.Text;
             string income = this.textBox3.Text;
             string expenses = this.textBox4.Text;
 
-            double dInput = Convert.ToDouble(income);
-            oCal.addList(income, expenses: expenses);
-
-            double sumIncome = oCal.getIncome();
+            double income = Convert.ToDouble(textBox3.Text);
+            oCal.addList(income);
+            double expenses = Convert.ToDouble(textBox4.Text);
+            oCal.addList(expenses);
+            double sumIncome = income + sum;
+            textBox5.Text = sumIncome.ToString();
+            double sumIncome = oCal.getSumIncome();
             textBox5.Text = sumIncome.ToString();
 
-            double sumExpenses = oCal.getExpenses();
-            textBox6.Text = sumExpenses.ToString();
-
-
-
-
-        
+            double sumExpenses = oCal.getSumExpenses();
+            textBox6.Text = sumExpenses.ToString();*/
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if(dataGridView1.Rows.Count > 0) 
-            { 
+            if (dataGridView1.Rows.Count > 0)
+            {
                 SaveFileDialog sfd = new SaveFileDialog();
                 sfd.Filter = "CSV(*.csv)|*.csv";
                 bool fileError = false;
-                if(sfd.ShowDialog() == DialogResult.OK)
+                if (sfd.ShowDialog() == DialogResult.OK)
                 {
                     if (!fileError)
                     {
@@ -123,17 +145,6 @@ namespace Quiz
                     }
                 }
             }
-            
-        }
-
-        private void textBox5_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox6_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
