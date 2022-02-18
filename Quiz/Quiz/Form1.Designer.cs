@@ -117,7 +117,7 @@
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(141, 31);
             this.textBox6.TabIndex = 3;
-            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+
             // 
             // textBox5
             // 
@@ -126,7 +126,7 @@
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(141, 31);
             this.textBox5.TabIndex = 2;
-            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+
             // 
             // label5
             // 

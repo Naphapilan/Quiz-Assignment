@@ -8,10 +8,10 @@ namespace Quiz
 {
     internal class income_and_expenses
     {
-        private int sumIncome = 0;
-        private int sumExpenses = 0;
-        private int expenses = 0;
-        private int income = 0;
+        private double sumincome = 0;
+        private double sumexpenses = 0;
+        private double expenses = 0;
+        private double income = 0;
         private int n = 0;
 
         /// <summary>
@@ -19,37 +19,31 @@ namespace Quiz
         /// </summary>
         /// <param name="income"></param>
         /// <param name="expenses"></param>
-        public void addList(int income ,int expenses )
+        public void addList(double income ,double expenses )
         {
-            this.sumIncome += income;
-            this.sumExpenses += expenses;
-         /*   this.n++;
+         
+            this.income = income;
+            this.expenses = expenses;
+    
 
-            if (this.sumIncome < income) 
-            { 
-                this.sumIncome += income; 
-
-            }
-            if (this.sumExpenses < expenses) 
-            { 
-                this.sumExpenses += expenses; 
-            }*/
+            
         }
 
         /// <summary>
         /// 
         /// </summary>
         /// <returns>sumIncome</returns>
-        public double getSumIncome()
+        /*public double getSumIncome()
         {
-            double result = this.sumIncome + this.income;
+            double result = this.sumincome + income;
             return result;
         }
         public double getSumExpenses()
         {
-            double result = this.sumExpenses + this.expenses;
+            double result = this.sumexpenses + expenses;
             return result;
         }
+        */
 
     }
 }

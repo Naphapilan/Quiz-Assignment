@@ -77,7 +77,7 @@ namespace Quiz
         {
 
         }
-
+        int sumin = 0, sumex = 0, inIn = 0, inEx = 0;
         private void buttonAdd_Click(object sender, EventArgs e)
         {
             int n = dataGridView1.Rows.Add();
@@ -85,27 +85,17 @@ namespace Quiz
             dataGridView1.Rows[n].Cells[1].Value = textBox3.Text;
             dataGridView1.Rows[n].Cells[2].Value = textBox4.Text;
 
-            /*for (n = 0 ) 
-            { sumIncome = dataGridView1.Rows[n].Cells[1].Value + samt
-            }
-            dataGridView1.Rows[n - 1].Cells[0].Value = "รวม";
-            dataGridView1.Rows[n - 1].Cells[1].Value = samIncome;*/
+            
+            inIn = Convert.ToInt32(textBox3.Text);
+            inEx = Convert.ToInt32(textBox4.Text);
 
-            /*string sum = this.textBox3.Text;
-            string income = this.textBox3.Text;
-            string expenses = this.textBox4.Text;
+            sumin = inIn + sumin;
+            sumex = inEx + sumex;
 
-            double income = Convert.ToDouble(textBox3.Text);
-            oCal.addList(income);
-            double expenses = Convert.ToDouble(textBox4.Text);
-            oCal.addList(expenses);
-            double sumIncome = income + sum;
-            textBox5.Text = sumIncome.ToString();
-            double sumIncome = oCal.getSumIncome();
-            textBox5.Text = sumIncome.ToString();
+            textBox5.Text = sumin.ToString();
+            textBox6.Text = sumex.ToString();
+            
 
-            double sumExpenses = oCal.getSumExpenses();
-            textBox6.Text = sumExpenses.ToString();*/
         }
 
         private void button2_Click(object sender, EventArgs e)
