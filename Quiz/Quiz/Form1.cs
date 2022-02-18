@@ -57,7 +57,7 @@ namespace Quiz
                         for (int j = 0; j < column; j++)
                         {
                             if (this.dataGridView1.Rows[i].Cells[j].Value != null)
-                          {
+                            {
                                 strData = this.dataGridView1.Rows[i].Cells[j].Value.ToString();
                             }
                         }
