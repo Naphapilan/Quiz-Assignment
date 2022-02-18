@@ -19,31 +19,16 @@ namespace Quiz
         /// </summary>
         /// <param name="income"></param>
         /// <param name="expenses"></param>
-        public void addList(double income ,double expenses )
+        public void addList(double income, double expenses)
         {
-         
+
             this.income = income;
             this.expenses = expenses;
-    
 
-            
-        }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <returns>sumIncome</returns>
-        /*public double getSumIncome()
-        {
-            double result = this.sumincome + income;
-            return result;
+
         }
-        public double getSumExpenses()
-        {
-            double result = this.sumexpenses + expenses;
-            return result;
-        }
-        */
 
     }
+        
 }
